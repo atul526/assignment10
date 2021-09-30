@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <script>
+          function table() {
+        var number;
+        var result = "";
+
+        number = Number(document.getElementById("number").value);
+
+        for(var i = 1; i<= 10; i++){
+          result = result + "<p>"+number + "*" + i + "=" + number * i+"</p>";
+        }
+
+        document.getElementById("result").innerHTML = result;
+      }
+
+    </script>
+</head>
+<body>
+    Enter the number : <input id="number" />
+    <button onclick="table()">Print table</button>
+    <div id="result">
+</body>
+</html>
